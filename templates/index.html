@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>    
+    <div class="nav">
+        <a id="active" href="index.html">Hjem</a>
+        <a href="hoydepunkter.html">Høydepunkter</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Registrer her</a>
+        <a href="om_oss.html">Om oss og kontakt</a>
+        <a href="allproducts.html">Alle produkter</a>
+        <a href="kjop.html">Kjøp</a>
+        <div onclick="darkmode()">darkmode()</div>
+    </div>
+    <div class="hero">
+        <h1>Velkomnmen til GameXchange.no!</h1>
+        <img src="../bilder/banner2.png" class="herobilde">
+        <h3>Ditt nettsted for kjøp og salg av brukte spill! </h3>
+
+    </div>
+
+    <div class="content">
+        <h2>Dagbok</h2>
+        <form id="comment-form">
+        <input type="text" id="comment" />
+        <button type="submit">Send</button>
+        </form>
+        <div id="comment-section"></div>
+    </div>
+
+
+<script>
+    function darkmode() {
+        /* funker ikke :() */
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    document.getElementById('comment-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const input = document.getElementById('comment').value;
+        document.getElementById('comment-section').innerHTML += `<p>${input}</p>`;
+    });
+
+</script>
+</body>
+</html>
