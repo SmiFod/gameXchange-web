@@ -61,18 +61,34 @@ h3 {
     font-family: cursive;
 }
 
-/* 
-.prod {
+
+/* .prod {
 display: flex;
 justify-content: center;
 align-items: flex-end;
 flex: 1;
- */
-
-/* a {
-    background-color: lightcoral;
-    color: green;
 } */
+
+.produkter {
+    color: white;
+    width: 50%;
+}
+
+#status {
+    font-weight: lighter;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+#red {
+    width: 20%;
+}
+
+.alleprodukter {
+    display: flex;
+}
 
 .home {
     width: 1000;
